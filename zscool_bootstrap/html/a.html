@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <script src="../tinymce/tinymce.min.js"></script>
+    <script type="text/javascript">
+        tinymce.init({
+            selector: 'textarea',
+            language: 'zh_CN',
+            toolbar: 'numlist | bullist | forecolor | backcolor |charmap | preview | anchor | searchreplace | code | ' +
+                'insertdatetime | media | table | quickimage ',
+            plugins: 'textcolor lists image charmap preview anchor searchreplace code insertdatetime media table emoticons'
+        });
+    </script>
+</head>
+
+<body>
+<form method="post">
+    <textarea>你好，世界!</textarea>
+</form>
+</body>
+</html>
+
+
+<!--本网页为测试tinymce富文本留下的网页，tinymce文件夹为富文本文件夹-->

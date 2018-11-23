@@ -1,0 +1,414 @@
+
+html, body
+{
+    height: 100%;
+}
+
+.container {
+    min-height: 100%;
+}
+
+body{
+    font-family: 'Microsoft YaHei', sans-serif;
+    background: #f4f4f4;
+}
+.navbar-default{
+    background-color: #fff;
+    border: none;
+    box-shadow: 0px 2px 8px 0px rgba(50,50,50,0.25);
+}
+.navbar-default .navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    color: #40D2B1;
+    height: 70px;
+    line-height: 35px;
+}
+.navbar-default .navbar-nav>li>a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+    height: 70px;
+    line-height: 35px;
+}
+.navbar-toggle{
+    margin-top: 17px;
+}
+.navbar-default .navbar-toggle:hover {
+    border-color: #40D2B1;
+    background-color: rgb(69, 210, 184);
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #1C9982;
+}
+/*home*/
+/*#home{*/
+    /*margin-top: 70px;*/
+    /*background: url("../images/home-bg.jpg");*/
+    /*background-size: cover;*/
+    /*color: #ffffff;*/
+    /*text-align: center;*/
+    /*width: 100%;*/
+/*}*/
+.lvjing{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    padding: 90px 0;
+}
+#home h1{
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+#home p{
+    font-weight: 400;
+    line-height: 35px;
+}
+#home img{
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.navbar-from-top{
+    margin-top: 19px;
+    
+}
+
+
+/* 回到顶部 */
+.back_to_top{
+  position: fixed;
+  bottom:150px;
+  right: 30px;
+  border:1px solid #888;
+  height: 50px;
+  width: 50px;
+  /* background: url(../images/top.jpg) no-repeat; */
+  border-radius: 25px
+  
+}
+
+
+
+
+/* 全局 */
+
+body {
+  font-family: 'Microsoft YaHei', sans-serif;
+  color: #555;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: 'Microsoft YaHei', sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+
+/*
+  * Override Bootstrap's default container.
+  */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+
+
+/* Active state gets a caret at the bottom */
+.blog-nav .active {
+  color: #fff;
+}
+.blog-nav .active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-left: 5px solid transparent;
+}
+
+
+/*
+  * 博客名称及描述
+  */
+
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+
+
+/*
+  * 主栏和侧边栏布局
+  */
+
+.blog-main {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* 用于装箱内容的侧栏模块 */
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;  
+}
+/*侧边栏微博划线*/
+.us-title:after{
+    display:block;
+    content: "";
+    width: 90px;
+    height: 2px;
+    background: #40D2B1;
+    position: relative;
+    left: 0px;
+    bottom: -7px;
+    margin-bottom: 20px;
+}
+
+.us-box{
+    padding: 25px;
+}
+.us-box a{
+    line-height: 30px;
+    text-decoration: none;}
+
+.us-box-color{
+    background: #40D2B1;
+}
+
+
+/* Blog posts 文章首页标题处理*/
+
+.us-post-link{
+    background: #40D2B1;
+}
+.us-post-img img{
+    width: 100%;
+}
+.us-post-img{
+    margin: 25px 0;
+}
+.blog-post {
+  margin-bottom: 20px;
+
+}
+.blog-post-title {
+  margin-bottom: 5px;
+  font-size: 22px;
+}
+.blog-post-meta {
+  margin-bottom: 10px;
+  color: #999;
+  font-size: 15px;
+  
+}
+.us-box-background-color{
+    background: #40D2B1;
+}
+
+
+/* 页脚 */
+
+.blog-footer {
+    padding: 16px 0;
+    color: #999;
+    text-align: center;
+    /*border-top: 1px solid #e5e5e5;*/
+    background: black;
+    font-family: 'Microsoft YaHei', sans-serif;
+    clear: both; /* 清除浮动元素格式 */
+    position: relative;
+    /*margin-top: -120px; !* Footer 高度的负值 *!*/
+}
+.blog-footer p:last-child {
+    margin-bottom: 0;
+}
+
+
+.sign_box{
+  margin:0 auto;
+  text-align: center;
+  border: 1px solid #bec3c3;
+  background: white;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  max-width: 330px;
+  padding: 30px;
+}
+
+
+/* 登录样式 */
+.font_left{
+  font-size: 16px;
+  font-family: 'Microsoft YaHei', sans-serif;
+  margin-left: -180px;
+}
+.font_left1{
+  font-size: 16px;
+  font-family: 'Microsoft YaHei', sans-serif;
+  margin-left: -200px;
+  
+}
+.font_left2{
+  font-size: 16px;
+  font-family: 'Microsoft YaHei', sans-serif;
+  margin-left: -160px;
+}
+
+.red_star{
+  color: red;
+}
+
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* 注册样式 */
+
+.login_bg{
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:-9999;
+	background:url(../images/login-bg.jpg) no-repeat;
+}
+
+.rapid_enrollment{
+  margin-top: -32px;
+}
+
+.rapid_enrollment1{
+  position:relative;
+  top:32px;
+}
+
+.rapid_enrollment_ico{
+  height: 20px;
+  width: 20px;
+
+}
+
+
+/*个人中心*/
+.img-circle{
+    max-height: 150px;
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.edit_image_center{
+    text-align: center;
+    margin:0 auto;
+}
+
+.my_article_btn{
+    max-height: 20px;
+}
+.my_article_btn span{
+    margin-top: -15px;
+}
+
+.my_article_table a{
+    text-decoration:none;
+}
+
+/*首页头像背景*/
+.touxiang_bg1 {
+    position: relative;
+}
+.touxiang_bg2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -80px 0 0 -80px;
+}
+.touxiang_bg2 a{
+    color: white;
+    background: none;
+}
+
+.jumbotron1{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/big002.gif");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    -moz-background-size:100% 100%;
+    margin-bottom: -30px;
+}
+
+.w-e-toolbar {
+    flex-wrap: wrap;
+
+    /* 单个菜单 */
+}
